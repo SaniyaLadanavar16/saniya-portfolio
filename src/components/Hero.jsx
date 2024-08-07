@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+import { Typed }from "react-typed";
 import { BsChevronDown } from "react-icons/bs";
 import { Link, animateScroll as scroll } from "react-scroll";
 import link from "../assets/Saniya_resume.pdf";
