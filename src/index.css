@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  border-radius: 999em;
+}
+.btn:hover {
+  background-color: #ffc107;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+.bounce-out-down {
+  animation: bounce-out-down 2s ease infinite;
+}
+@keyframes bounce-out-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  background: url("./assets/bg7.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+  z-index: -20;
+}
+.links ul li {
+  cursor: pointer;
+}
+.links ul li:hover {
+  transition: 0.2s ease-in-out;
+  color: #ffc107;
+}
+.screen {
+  min-height: calc(100vh - 72px);
+}
